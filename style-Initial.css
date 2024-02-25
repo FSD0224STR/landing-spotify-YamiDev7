@@ -1,0 +1,154 @@
+.navigator {
+    background: black;
+    border: 3px solid black;
+    width: 100%;
+    height: 60px;
+}
+
+.icon {
+    z-index: 99;
+    height: 55px;
+    width: 150px;
+    padding-left: 30px;
+}
+
+.containerCoverPage {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.imgCoverPage {
+    width: 90%;
+    height: 450px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.titleCoverPage {
+    font-size: 2.6em;
+}
+
+.explainCoverPage {
+    grid-area: explainCoverPage;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descriptionCoverPage {
+    margin-inline: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.titleCoverPage {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.desCoverPage {
+    align-self: flex-start;
+    font-size: 1.1rem;
+    width: 85%;
+}
+
+.plansCoverPage {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-inline: 15px;
+}
+
+.btnAllPlans {
+    background: black;
+    color: white;
+    border: 2px solid #7f7f7f;
+    margin-inline: auto;
+    padding-inline: 40px;
+}
+
+.btnIndividualCover {
+    background: #ffd2d7;
+    border: #ffd2d7;
+    margin-inline: auto;
+    padding-inline: 40px;
+}
+
+.condCoverPage {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    margin-inline: 15px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .containerCoverPage {
+        flex-direction: row;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .explainCoverPage {
+        align-self: center;
+        width: 100%;
+        order: 1;
+        z-index: 1;
+    }
+    
+    .imgCoverPage {
+        width: 60%;
+        height: 450px;
+        order: 2;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .containerCoverPage {
+        margin-bottom: 20px;
+    }
+
+    .imgCoverPage {
+        width: 65%;
+        height: 480px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .containerCoverPage {
+        margin-bottom: 15px;
+    }
+
+    .imgCoverPage {
+        width: 70%;
+        height: 500px;
+    }
+    
+    .plansCoverPage {
+        flex-direction: row;
+        column-gap: 30px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .containerCoverPage {
+        margin-bottom: 10px;
+    }
+
+    .imgCoverPage {
+        width: 75%;
+        height: 600px;
+        margin-bottom: 0;
+    }
+}
